@@ -9,9 +9,11 @@ set laststatus=2
 set expandtab tabstop=4 softtabstop=4 shiftwidth=4
 set autoindent
 
+" replace ex with fill-region keybind
 map Q gq
 sunmap Q
 
+" requires vim >=v9.1.0375 (~may 2024)
 packadd! comment
 
 let plug_file = '~/.vim/autoload/plug.vim'
