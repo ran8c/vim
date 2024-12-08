@@ -1,13 +1,23 @@
+set nocompatible
 filetype plugin on
 syntax on
 
 colorscheme habamax
 
 set number relativenumber
+set ruler
+
 set laststatus=2
+set showcmd
 
 set expandtab tabstop=4 softtabstop=4 shiftwidth=4
 set autoindent
+
+set display=truncate
+set scrolloff=5
+set nrformats-=octal
+
+set incsearch
 
 " replace ex with fill-region keybind
 map Q gq
