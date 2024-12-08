@@ -1,0 +1,6 @@
+# vim-plug files
+autoload/*
+plugged/*
+
+# vim cache files
+.netrwhist
