@@ -13,6 +13,9 @@ set autoindent
 map Q gq
 sunmap Q
 
+" reduce esc and O timeouts
+set ttimeout ttimeoutlen=100
+
 " requires vim >=v9.1.0375 (~may 2024)
 packadd! comment
 
