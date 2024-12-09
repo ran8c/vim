@@ -44,7 +44,7 @@ Plug 'junegunn/vim-plug'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'prabirshrestha/vim-lsp'
-Plug 'https://github.com/Konfekt/FastFold'
+Plug 'Konfekt/FastFold'
 
 call plug#end()
 
