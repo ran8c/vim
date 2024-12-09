@@ -19,6 +19,8 @@ set nrformats-=octal
 
 set incsearch
 
+set foldlevelstart=99 foldmethod=syntax foldnestmax=5
+
 " replace ex with fill-region keybind
 map Q gq
 sunmap Q
@@ -42,6 +44,7 @@ Plug 'junegunn/vim-plug'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'prabirshrestha/vim-lsp'
+Plug 'https://github.com/Konfekt/FastFold'
 
 call plug#end()
 
@@ -67,6 +70,9 @@ let g:lsp_diagnostics_echo_cursor = 1
 function! s:on_lsp_buffer_enabled() abort
   setlocal omnifunc=lsp#complete
   setlocal signcolumn=yes
+  setlocal foldmethod=expr
+        \ foldexpr=lsp#ui#vim#folding#foldexpr()
+        \ foldtext=lsp#ui#vim#folding#foldtext()
   nmap <buffer> gd <plug>(lsp-definition)
   nmap <buffer> gD <plug>(lsp-declaration)
   nmap <buffer> gs <plug>(lsp-document-symbol)
@@ -87,3 +93,7 @@ augroup lsp_install
   autocmd!
   autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
+
+nmap zuz <plug>(FastFoldUpdate)
+let g:fastfold_fold_command_suffixes = []
+let g:fastfold_minlines = 0
