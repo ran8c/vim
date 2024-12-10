@@ -45,6 +45,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'Konfekt/FastFold'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -97,3 +98,9 @@ augroup END
 nmap zuz <plug>(FastFoldUpdate)
 let g:fastfold_fold_command_suffixes = []
 let g:fastfold_minlines = 0
+
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki', 
+      \ 'syntax': 'markdown', 
+      \ 'ext': 'md'}]
+let g:vimwiki_global_ext = 0
+let g:vimwiki_ext2syntax = {}
