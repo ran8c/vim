@@ -46,7 +46,6 @@ Plug 'tpope/vim-surround'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'Konfekt/FastFold'
 Plug 'vimwiki/vimwiki'
-Plug 'tpope/vim-vinegar'
 Plug 'lervag/vimtex'
 
 call plug#end()
