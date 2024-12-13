@@ -47,6 +47,8 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'Konfekt/FastFold'
 Plug 'vimwiki/vimwiki'
 Plug 'lervag/vimtex'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'ervandew/supertab'
 
 call plug#end()
@@ -115,3 +117,8 @@ if uname == 'Darwin'
 else " Linux
   let g:vimtex_view_method = 'zathura'
 endif
+
+nmap <leader>ff <cmd>Files<CR>
+nmap <leader>fg <cmd>Rg<CR>
+nmap <leader>fc <cmd>Commits<CR>
+nmap <leader>fh <cmd>Helptags<CR>
