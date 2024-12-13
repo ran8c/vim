@@ -47,6 +47,7 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'Konfekt/FastFold'
 Plug 'vimwiki/vimwiki'
 Plug 'lervag/vimtex'
+Plug 'ervandew/supertab'
 
 call plug#end()
 
