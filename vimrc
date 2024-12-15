@@ -28,9 +28,6 @@ sunmap Q
 " reduce esc and O timeouts
 set ttimeout ttimeoutlen=100
 
-" requires vim >=v9.1.0375 (~may 2024)
-packadd! comment
-
 let plug_file = '~/.vim/autoload/plug.vim'
 let plug_url = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 if empty(glob(plug_file))
@@ -50,6 +47,7 @@ Plug 'lervag/vimtex'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ervandew/supertab'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
