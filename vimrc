@@ -41,7 +41,6 @@ Plug 'junegunn/vim-plug'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'prabirshrestha/vim-lsp'
-Plug 'Konfekt/FastFold'
 Plug 'vimwiki/vimwiki'
 Plug 'lervag/vimtex'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -104,10 +103,6 @@ augroup lsp_install
   autocmd!
   autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
-
-nmap zuz <plug>(FastFoldUpdate)
-let g:fastfold_fold_command_suffixes = []
-let g:fastfold_minlines = 0
 
 let g:vimwiki_list = [{'path': '~/Documents/vimwiki', 
       \ 'syntax': 'markdown', 
