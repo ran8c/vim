@@ -51,6 +51,14 @@ Plug 'tpope/vim-commentary'
 
 call plug#end()
 
+if executable('pylsp')
+  autocmd User lsp_setup call lsp#register_server({
+        \ 'name': 'pylsp',
+        \ 'cmd': {server_info->['pylsp']},
+        \ 'allowlist': ['python'],
+        \})
+endif
+
 if executable('clangd')
   autocmd User lsp_setup call lsp#register_server({
         \ 'name': 'clangd',
