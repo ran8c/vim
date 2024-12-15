@@ -101,7 +101,7 @@ augroup lsp_install
   autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki', 
+let g:vimwiki_list = [{'path': '~/Documents/Wiki', 
       \ 'syntax': 'markdown', 
       \ 'ext': 'md'}]
 let g:vimwiki_ext2syntax = {}
