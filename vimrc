@@ -42,8 +42,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'vimwiki/vimwiki'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-commentary'
 
@@ -108,10 +106,3 @@ let g:vimwiki_list = [{'path': '~/Documents/vimwiki',
       \ 'ext': 'md'}]
 let g:vimwiki_global_ext = 0
 let g:vimwiki_ext2syntax = {}
-
-let g:netrw_fastbrowse = 0
-
-nmap <leader>ff <cmd>Files<CR>
-nmap <leader>fg <cmd>Rg<CR>
-nmap <leader>fc <cmd>Commits<CR>
-nmap <leader>fh <cmd>Helptags<CR>
