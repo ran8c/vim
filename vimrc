@@ -42,7 +42,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'vimwiki/vimwiki'
-Plug 'lervag/vimtex'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ervandew/supertab'
@@ -111,13 +110,6 @@ let g:vimwiki_global_ext = 0
 let g:vimwiki_ext2syntax = {}
 
 let g:netrw_fastbrowse = 0
-
-let uname = substitute(system('uname'), '\n', '', '')
-if uname == 'Darwin'
-  let g:vimtex_view_method = 'skim'
-else " Linux
-  let g:vimtex_view_method = 'zathura'
-endif
 
 nmap <leader>ff <cmd>Files<CR>
 nmap <leader>fg <cmd>Rg<CR>
