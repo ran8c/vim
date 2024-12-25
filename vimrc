@@ -2,8 +2,6 @@ set nocompatible
 filetype plugin on
 syntax on
 
-colorscheme habamax
-
 set number relativenumber
 set ruler
 
@@ -44,6 +42,7 @@ Plug 'https://github.com/prabirshrestha/vim-lsp'
 Plug 'https://github.com/Konfekt/FastFold'
 Plug 'https://github.com/vimwiki/vimwiki'
 Plug 'https://github.com/tpope/vim-commentary'
+Plug 'https://github.com/rose-pine/vim'
 
 call plug#end()
 
@@ -111,3 +110,6 @@ let g:vimwiki_list = [{'path': '~/Documents/Wiki',
       \ 'syntax': 'markdown', 
       \ 'ext': 'md'}]
 let g:vimwiki_ext2syntax = {}
+
+let g:disable_bg = 1
+colorscheme rosepine
