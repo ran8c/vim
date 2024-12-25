@@ -25,6 +25,10 @@ set incsearch
 
 set foldlevelstart=99 foldmethod=syntax foldnestmax=5
 
+colorscheme habamax
+highlight Normal ctermbg=NONE guibg=NONE
+highlight Comment cterm=italic gui=italic
+
 # replace ex with fill-region keybind
 map Q gq
 sunmap Q
@@ -58,7 +62,6 @@ Plug 'https://github.com/Konfekt/FastFold'
 Plug 'https://github.com/vimwiki/vimwiki'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/ervandew/supertab'
-Plug 'https://github.com/rose-pine/vim'
 Plug 'https://github.com/dense-analysis/ale'
 
 call plug#end()
@@ -74,8 +77,6 @@ g:vimwiki_list = [{
     'ext': 'md'}]
 g:vimwiki_ext2syntax = {}
 
-g:disable_bg = 1
-colorscheme rosepine
 
 g:SuperTabDefaultCompletionType = 'context'
 g:SuperTabContextDefaultCompletionType = '<C-x><C-o>'
