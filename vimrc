@@ -1,3 +1,5 @@
+vim9script
+
 set nocompatible
 filetype plugin on
 syntax on
@@ -22,15 +24,15 @@ set incsearch
 
 set foldlevelstart=99 foldmethod=syntax foldnestmax=5
 
-" replace ex with fill-region keybind
+# replace ex with fill-region keybind
 map Q gq
 sunmap Q
 
-" reduce esc and O timeouts
+# reduce esc and O timeouts
 set ttimeout ttimeoutlen=100
 
-let plug_file = '~/.vim/autoload/plug.vim'
-let plug_url = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+var plug_file = '~/.vim/autoload/plug.vim'
+var plug_url = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 if empty(glob(plug_file))
   silent execute '!curl -fLo '.plug_file.' --create-dirs '.plug_url
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
@@ -106,14 +108,15 @@ augroup lsp_install
 augroup END
 
 nmap zuz <plug>(FastFoldUpdate)
-let g:fastfold_fold_command_suffixes = []
-let g:fastfold_minlines = 0
-let g:fastfold_foldmethods = ['syntax', 'expr']
+g:fastfold_fold_command_suffixes = []
+g:fastfold_minlines = 0
+g:fastfold_foldmethods = ['syntax', 'expr']
 
-let g:vimwiki_list = [{'path': '~/Documents/Wiki', 
-      \ 'syntax': 'markdown', 
-      \ 'ext': 'md'}]
-let g:vimwiki_ext2syntax = {}
+g:vimwiki_list = [{
+    'path': '~/Documents/Wiki', 
+    'syntax': 'markdown', 
+    'ext': 'md'}]
+g:vimwiki_ext2syntax = {}
 
-let g:disable_bg = 1
+g:disable_bg = 1
 colorscheme rosepine
