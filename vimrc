@@ -57,7 +57,7 @@ Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/Konfekt/FastFold'
 Plug 'https://github.com/vimwiki/vimwiki'
 Plug 'https://github.com/tpope/vim-commentary'
-Plug 'https://git.sr.ht/~ackyshake/VimCompletesMe.vim'
+Plug 'https://github.com/ervandew/supertab'
 Plug 'https://github.com/rose-pine/vim'
 Plug 'https://github.com/dense-analysis/ale'
 
@@ -76,6 +76,9 @@ g:vimwiki_ext2syntax = {}
 
 g:disable_bg = 1
 colorscheme rosepine
+
+g:SuperTabDefaultCompletionType = 'context'
+g:SuperTabContextDefaultCompletionType = '<C-x><C-o>'
 
 g:ale_gloating_preview = 1
 g:ale_completion_autoimport = 0
@@ -97,7 +100,6 @@ g:ale_fixers = {
 
 def ALEBufferSettings()
   setlocal omnifunc=ale#completion#OmniFunc
-  # b:vcm_tab_complete = "omni"
   nmap <buffer> K <cmd>ALEHover<CR>
   nmap <buffer> gr <cmd>ALEFindReferences<CR>
   nmap <buffer> <leader>fx <cmd>ALEFix<CR>
