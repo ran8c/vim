@@ -11,6 +11,9 @@ set showcmd
 set expandtab tabstop=4 softtabstop=4 shiftwidth=4
 set autoindent
 
+set completeopt=menu,menuone
+set shortmess+=c
+
 set display=truncate
 set scrolloff=5
 set nrformats-=octal
@@ -42,6 +45,7 @@ Plug 'https://github.com/prabirshrestha/vim-lsp'
 Plug 'https://github.com/Konfekt/FastFold'
 Plug 'https://github.com/vimwiki/vimwiki'
 Plug 'https://github.com/tpope/vim-commentary'
+Plug 'https://git.sr.ht/~ackyshake/VimCompletesMe.vim'
 Plug 'https://github.com/rose-pine/vim'
 
 call plug#end()
