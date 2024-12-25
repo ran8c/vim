@@ -37,13 +37,13 @@ endif
 
 call plug#begin()
 
-Plug 'junegunn/vim-plug'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'Konfekt/FastFold'
-Plug 'vimwiki/vimwiki'
-Plug 'tpope/vim-commentary'
+Plug 'https://github.com/junegunn/vim-plug'
+Plug 'https://github.com/tpope/vim-fugitive'
+Plug 'https://github.com/tpope/vim-surround'
+Plug 'https://github.com/prabirshrestha/vim-lsp'
+Plug 'https://github.com/Konfekt/FastFold'
+Plug 'https://github.com/vimwiki/vimwiki'
+Plug 'https://github.com/tpope/vim-commentary'
 
 call plug#end()
 
