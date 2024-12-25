@@ -43,7 +43,6 @@ Plug 'tpope/vim-surround'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'Konfekt/FastFold'
 Plug 'vimwiki/vimwiki'
-Plug 'ervandew/supertab'
 Plug 'tpope/vim-commentary'
 
 call plug#end()
@@ -71,8 +70,6 @@ if executable('rust-analyzer')
         \ 'allowlist': ['rust'],
         \})
 endif
-
-let g:SuperTabDefaultCompletionType = "context"
 
 let g:lsp_document_highlight_enabled = 0
 let g:lsp_diagnostics_virtual_text_enabled = 0
