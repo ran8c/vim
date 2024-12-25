@@ -77,12 +77,12 @@ g:vimwiki_list = [{
     'ext': 'md'}]
 g:vimwiki_ext2syntax = {}
 
-
 g:SuperTabDefaultCompletionType = 'context'
 g:SuperTabContextDefaultCompletionType = '<C-x><C-o>'
 
 g:ale_gloating_preview = 1
 g:ale_completion_autoimport = 0
+
 # linters = lsp servers
 g:ale_linters = {
   'c': ['clangd'],
@@ -90,6 +90,7 @@ g:ale_linters = {
   'python': ['pylsp'],
   'rust': ['rust_analyzer'],
 }
+
 # fixers = formatters
 g:ale_fixers = {
   '*': ['remove_trailing_lines', 'trim_whitespace'],
