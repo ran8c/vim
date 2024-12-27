@@ -61,7 +61,6 @@ Plug 'https://github.com/junegunn/vim-plug'
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/Konfekt/FastFold'
-Plug 'https://github.com/vimwiki/vimwiki'
 Plug 'https://github.com/ervandew/supertab'
 Plug 'https://github.com/dense-analysis/ale'
 
@@ -71,12 +70,6 @@ nmap zuz <plug>(FastFoldUpdate)
 g:fastfold_fold_command_suffixes = []
 g:fastfold_minlines = 0
 g:fastfold_foldmethods = ['syntax', 'expr']
-
-g:vimwiki_list = [{
-    'path': '~/Documents/Wiki', 
-    'syntax': 'markdown', 
-    'ext': 'md'}]
-g:vimwiki_ext2syntax = {}
 
 g:SuperTabDefaultCompletionType = 'context'
 g:SuperTabContextDefaultCompletionType = '<C-x><C-o>'
