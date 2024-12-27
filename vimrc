@@ -82,6 +82,7 @@ g:ale_linters = {
   'c': ['clangd'],
   'cpp': ['clangd'],
   'python': ['pylsp'],
+  'tex': ['texlab', 'chktex'],
   'rust': ['rust_analyzer'],
 }
 
@@ -91,6 +92,7 @@ g:ale_fixers = {
   'c': ['clang-format'],
   'cpp': ['clang-format'],
   'python': ['black'],
+  'tex': ['latexindent'],
   'rust': ['rustfmt'],
 }
 
