@@ -53,6 +53,8 @@ if empty(glob(plug_file))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+packadd! comment
+
 call plug#begin()
 
 Plug 'https://github.com/junegunn/vim-plug'
@@ -60,7 +62,6 @@ Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/Konfekt/FastFold'
 Plug 'https://github.com/vimwiki/vimwiki'
-Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/ervandew/supertab'
 Plug 'https://github.com/dense-analysis/ale'
 
