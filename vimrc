@@ -60,6 +60,8 @@ call plug#begin()
 Plug 'https://github.com/junegunn/vim-plug'
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/tpope/vim-surround'
+Plug 'https://github.com/tpope/vim-rsi'
+Plug 'https://github.com/markonm/traces.vim'
 Plug 'https://github.com/Konfekt/FastFold'
 Plug 'https://github.com/ervandew/supertab'
 Plug 'https://github.com/dense-analysis/ale'
