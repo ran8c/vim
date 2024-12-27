@@ -74,7 +74,7 @@ g:fastfold_foldmethods = ['syntax', 'expr']
 g:SuperTabDefaultCompletionType = 'context'
 g:SuperTabContextDefaultCompletionType = '<C-x><C-o>'
 
-g:ale_gloating_preview = 1
+g:ale_floating_preview = 1
 g:ale_completion_autoimport = 0
 
 # linters = lsp servers
